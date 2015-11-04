@@ -1,0 +1,27 @@
+<snippet>
+    <content>
+<![CDATA[
+import {Component, View} from 'angular2/angular2';
+${5}
+
+@Component({
+    selector: '${1:selector}',
+    providers: [${2:provider}]
+})
+
+@View({
+    directives: [],
+    templateUrl: '${3:template}'
+})
+
+export class ${1/^(\w)|(?:-(\w))/(?1\u$1:)(?2\u$2:)/g}Component {
+
+    constructor(${2/(.*)/\L\1\E/i}:${2:provider}) {
+        
+    }
+
+}
+]]></content>
+    <tabTrigger>ngComponent</tabTrigger>
+    <scope>text.plain, source.ts</scope>
+</snippet>
