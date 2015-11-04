@@ -1,1 +1,3 @@
-# sublime-angular2-snippets
+# How to insatll
+
+TODO
